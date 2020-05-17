@@ -31,10 +31,13 @@ description: Use this area of the page to describe your project. The icon above 
 ### 학교
   
 * * *
- 호매실초등학교 졸업
- 호매실중학교 졸업
- 수원 수성고등학교 졸업
- 제주대학교 컴퓨터공학전공 재학
+호매실초등학교 졸업
+ 
+호매실중학교 졸업
+ 
+수원 수성고등학교 졸업
+ 
+제주대학교 컴퓨터공학전공 재학
 * * *
 
 
