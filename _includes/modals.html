@@ -1,6 +1,7 @@
+
  <!-- Portfolio Modals -->
-
-<div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+ {% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -12,153 +13,31 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project 1</h2>
+                            <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="image-alt">
-                            
-                               
-                                    <p>{{ post.description }}</p>
-                               
-                            
+                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
                             <ul class="list-inline item-details">
-                                
+                                {% if post.client %}
                                 <!--    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                        <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
                                         </strong>
                                     </li> -->
-                                
-                                
-                                 <!--    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                        </strong>
-                                    </li> -->
-                                
-                                
-                                  <!--  <li>Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                        </strong>
-                                    </li> -->
-                                
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-
-
-
-
- <div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project 2</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="image-alt">
-                            
-    <ul>
-                            <li>smlee5270</li>
-  <li>이승민
-
-    <h2>학력</h2>
-  </li>
-  <li>제주대학교 컴퓨터공학과 3학년
-<br />
-<br />
-    <h2>언어</h2>
-  </li>
-</ul>
-
-
-
-<h2>프로그래밍 언어</h2>
-
-<ul>
-  <li>C/C++</li>
-  <li>Java</li>
-  <li>Python</li>
-                            </ul>
-<ul class="list-inline item-details">
-                                
-                                <!--    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                        </strong>
-                                    </li> -->
-                                
-                                
-                                 <!--    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                        </strong>
-                                    </li> -->
-                                
-                                
-                                  <!--  <li>Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                        </strong>
-                                    </li> -->
-                                
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </div>
-     
-     
-     
-     
-     <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project3</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="image-alt">
-                            
-                                {% if post.description %}
-                                    <p>{{ post.description }}</p>
                                 {% endif %}
-                            
-                            <ul class="list-inline item-details">
-                                
-                                <!--    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                        </strong>
-                                    </li> -->
-                                
-                                
+                                {% if post.project-date %}
                                  <!--    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">April 2014</a>
+                                        <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
                                         </strong>
                                     </li> -->
-                                
-                                
+                                {% endif %}
+                                {% if post.category %}
                                   <!--  <li>Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a>
+                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                                         </strong>
                                     </li> -->
-                                
+                                {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 닫기</button>
                         </div>
@@ -166,4 +45,7 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
+{% endfor %}
+
+
