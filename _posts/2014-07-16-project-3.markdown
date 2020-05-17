@@ -7,5 +7,5 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: 읽어읽어일겅일겅ㄹ
+description: 읽어읽어일겅일겅읽어주세용
 ---
