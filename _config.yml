@@ -35,10 +35,9 @@ footer:
   
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://smlee5270@naver.com
+ 
   - title: facebook
-    url:
+    url: https://www.facebook.com/profile.php?id=100006020550999
   - title: bitbucket
     url: http://bitbucket.org/jekyll
   - title: github
