@@ -16,7 +16,9 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="image-alt">
                             
-                                <p>제발1</p>
+                                {% if post.description %}
+                                    <p>{{ post.description }}</p>
+                                {% endif %}
                             
                             <ul class="list-inline item-details">
                                 
@@ -65,7 +67,9 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="image-alt">
                             
-                                <p>제발2</p>
+                                {% if post.description %}
+                                    <p>{{ post.description }}</p>
+                                {% endif %}
                             
                             <ul class="list-inline item-details">
                                 
@@ -114,7 +118,9 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="image-alt">
                             
-                                <p>제발3</p>
+                                {% if post.description %}
+                                    <p>{{ post.description }}</p>
+                                {% endif %}
                             
                             <ul class="list-inline item-details">
                                 
