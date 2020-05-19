@@ -10,7 +10,7 @@ category: Web Development
 description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
 ---
 
-## 관심분야
+## Plan
 
 임베디드 프로그래머가 되는 것을 목표로 생각해 두고 있습니다. 이를 위해서 컴퓨터에 우분투를 설치해서 vi 편집기를 이용해 RTSP 코드를 분석해본 경험이 있고 앞으로 오픈소스 하드웨어 중 하나인 젯슨 나노를 사용해서 구글 어시스턴트, 딥러닝 영상처리 프로젝트를 진행할 계획이 있습니다.  
 
